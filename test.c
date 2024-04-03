@@ -75,7 +75,7 @@ int main (){
   BN_mod_exp(m2, c, d, n, ctx);
 
 
-  //test shit
+  //test shiz
   printf("PART 2:\n\n");
   printf("p: ");
   BN_print_fp(stdout, p);
@@ -88,6 +88,8 @@ int main (){
   printf("\n");
   printf("d: ");
   BN_print_fp(stdout, d);
+  printf("\n");
+  printf("Length of n in bits: %d", BN_num_bits(n));
   printf("\n\n");
   printf("PART 3:\n\n");
   printf("pre-encrypted Message: ");
